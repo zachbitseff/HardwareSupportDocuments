@@ -15,8 +15,6 @@ namespace HardwareSupportDocuments.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Welcome to the Hardware Support Docs Site!";
-;
 
             return View();
         }
