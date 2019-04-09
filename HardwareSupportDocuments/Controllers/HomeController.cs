@@ -15,14 +15,15 @@ namespace HardwareSupportDocuments.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Welcome to the Hardware Support Docs Site!";
+;
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Contact Info:";
 
             return View();
         }
