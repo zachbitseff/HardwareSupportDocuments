@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace HardwareSupportDocuments.Models
 {
-    public class FaultRecoveryLogs
+    public class FaultRecoveryLog
     {
 
         // Foreign Key
