@@ -14,6 +14,7 @@ namespace HardwareSupportDocuments.Models
 
         public string ErrorCode { get; set; }
 
+        [Display(Name = "Error Code Description")]
         public string ErrorCodeDescription { get; set; }
 
         public string Subsystem { get; set; }

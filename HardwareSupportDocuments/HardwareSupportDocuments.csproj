@@ -159,6 +159,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\DeficiencyReport.cs" />
     <Compile Include="Models\ErrorCodes.cs" />
     <Compile Include="Models\FaultRecoveryLog.cs" />
     <Compile Include="Models\FunctionalTestingLog.cs" />
