@@ -22,15 +22,15 @@ namespace HardwareSupportDocuments.Models
 
         // public virtual DbSet<MyEntity> MyEntities { get; set; }
 
-        //public virtual DbSet<Projects> Project { get; set; }
+        public virtual DbSet<Projects> Project { get; set; }
 
-       // public virtual System.Data.Entity.DbSet<HardwareSupportDocs.Models.ErrorCodes> ErrorCodes { get; set; }
+        public virtual DbSet<ErrorCodes> ErrorCodes { get; set; }
 
-        //public virtual System.Data.Entity.DbSet<HardwareSupportDocs.Models.FaultRecoveryLog> FaultRecoveryLogs { get; set; }
+        public virtual DbSet<FaultRecoveryLog> FaultRecoveryLogs { get; set; }
 
-        //public virtual System.Data.Entity.DbSet<HardwareSupportDocs.Models.FunctionalTestingLog> FunctionalTestingLogs { get; set; }
+        public virtual DbSet<FunctionalTestingLog> FunctionalTestingLogs { get; set; }
 
-        //public virtual System.Data.Entity.DbSet<HardwareSupportDocs.Models.DeficiencyReport> DeficiencyReports { get; set; }
+        public virtual DbSet<DeficiencyReport> DeficiencyReports { get; set; }
     }
 
     //public class MyEntity
