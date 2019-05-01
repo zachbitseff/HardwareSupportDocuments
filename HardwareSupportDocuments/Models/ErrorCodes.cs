@@ -14,6 +14,7 @@ namespace HardwareSupportDocuments.Models
 
         public string ErrorCode { get; set; }
 
+
         [Display(Name = "Error Code Description")]
         public string ErrorCodeDescription { get; set; }
 
@@ -21,6 +22,7 @@ namespace HardwareSupportDocuments.Models
 
         public string Component { get; set; }
 
+        [Display(Name = "Failure Mode")]
         public string FailureMode { get; set; }
 
         // Foreign Key

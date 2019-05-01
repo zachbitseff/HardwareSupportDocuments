@@ -19,9 +19,21 @@ namespace HardwareSupportDocuments.Models
         public string Description { get; set; }
 
 
+        [EnumDataType(typeof(Teams))]
+        public string Team { get; set; }
+
+        public enum Teams
+        {
+            PK, // Pack
+            S, // Sortation
+            IIRA // Integrated Industrial Robotic Arms
+        }
+
+
         // Navigation properties
-        //public virtual ICollection<FaultRecoveryLog> FaultLog { get; set; }
-        //public virtual ICollection<FunctionalTestingLog> FunctionalTestLog { get; set; }
+        public virtual ICollection<FaultRecoveryLog> FaultLog { get; set; }
+
+        public virtual ICollection<FunctionalTestingLog> FunctionalTestLog { get; set; }
 
     }
 }
