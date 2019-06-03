@@ -9,6 +9,10 @@
 *.user
 *.userosscache
 *.sln.docstates
+.vs/HardwareSupportDocuments/v16/.suo
+.vs/HardwareSupportDocuments/v16/Server/sqlite3/storage.ide-shm
+.vs/HardwareSupportDocuments/v16/Server/sqlite3/storage.ide-wal
+.vs/slnx.sqlite
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
