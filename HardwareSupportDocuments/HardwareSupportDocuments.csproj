@@ -155,6 +155,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DeficiencyReportsController.cs" />
     <Compile Include="Controllers\ErrorCodesController.cs" />
     <Compile Include="Controllers\FaultRecoveryLogsController.cs" />
     <Compile Include="Controllers\FunctionalTestingLogsController.cs" />
@@ -235,6 +236,11 @@
     <Content Include="Views\FaultRecoveryLogs\Details.cshtml" />
     <Content Include="Views\FaultRecoveryLogs\Edit.cshtml" />
     <Content Include="Views\FaultRecoveryLogs\Index.cshtml" />
+    <Content Include="Views\DeficiencyReports\Create.cshtml" />
+    <Content Include="Views\DeficiencyReports\Delete.cshtml" />
+    <Content Include="Views\DeficiencyReports\Details.cshtml" />
+    <Content Include="Views\DeficiencyReports\Edit.cshtml" />
+    <Content Include="Views\DeficiencyReports\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
