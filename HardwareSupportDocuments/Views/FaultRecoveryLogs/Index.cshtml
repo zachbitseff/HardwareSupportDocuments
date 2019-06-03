@@ -1,0 +1,87 @@
+﻿@model IEnumerable<HardwareSupportDocuments.Models.FaultRecoveryLog>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Project.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Login)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ErrorID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PartsReplaced)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PartNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RecoverySteps)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Hyperlinks)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Results)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Project.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Login)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ErrorID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PartsReplaced)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PartNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RecoverySteps)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Hyperlinks)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Results)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.FaultLogID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.FaultLogID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.FaultLogID })
+        </td>
+    </tr>
+}
+
+</table>
