@@ -1,0 +1,66 @@
+﻿@model HardwareSupportDocuments.Models.ErrorCodes
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ErrorCodes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ErrorCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ErrorCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ErrorCodeDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ErrorCodeDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Subsystem)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Subsystem)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Component)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Component)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FailureMode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FailureMode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FaultLogID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FaultLogID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ErrorID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
