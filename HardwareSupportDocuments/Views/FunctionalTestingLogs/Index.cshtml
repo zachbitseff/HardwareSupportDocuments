@@ -1,0 +1,99 @@
+﻿@model IEnumerable<HardwareSupportDocuments.Models.FunctionalTestingLog>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Project.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Login)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TestName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CurrentStateProblemDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProposedSolution)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChangesMadeDuringTest)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Observations)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RecommendedChanges)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChangeApproved)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Hyperlinks)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Results)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Project.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Login)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TestName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CurrentStateProblemDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProposedSolution)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChangesMadeDuringTest)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Observations)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RecommendedChanges)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChangeApproved)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Hyperlinks)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Results)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.FunctionalTestingLogID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.FunctionalTestingLogID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.FunctionalTestingLogID })
+        </td>
+    </tr>
+}
+
+</table>
