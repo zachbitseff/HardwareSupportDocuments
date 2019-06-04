@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\HardwareSupportDocuments",
+    "\\HardwareSupportDocuments\\Controllers"
   ],
   "SelectedNode": "\\HardwareSupportDocuments.sln",
   "PreviewInSolutionExplorer": false
