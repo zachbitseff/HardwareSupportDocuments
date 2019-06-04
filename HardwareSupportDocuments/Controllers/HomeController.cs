@@ -25,5 +25,10 @@ namespace HardwareSupportDocuments.Controllers
 
             return View();
         }
+
+        public ActionResult Quicklinks()
+        {
+            return View();
+        }
     }
 }

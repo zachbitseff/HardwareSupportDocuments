@@ -241,6 +241,7 @@
     <Content Include="Views\DeficiencyReports\Details.cshtml" />
     <Content Include="Views\DeficiencyReports\Edit.cshtml" />
     <Content Include="Views\DeficiencyReports\Index.cshtml" />
+    <Content Include="Views\Home\Quicklinks.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
