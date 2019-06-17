@@ -4,10 +4,10 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Functional Testing Logs</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Add Entry", "Create")
 </p>
 <table class="table">
     <tr>
@@ -25,24 +25,6 @@
         </th>
         <th>
             @Html.DisplayNameFor(model => model.CurrentStateProblemDescription)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ProposedSolution)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ChangesMadeDuringTest)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Observations)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.RecommendedChanges)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ChangeApproved)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Hyperlinks)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Results)
@@ -66,24 +48,6 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.CurrentStateProblemDescription)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ProposedSolution)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ChangesMadeDuringTest)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Observations)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.RecommendedChanges)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ChangeApproved)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Hyperlinks)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Results)
