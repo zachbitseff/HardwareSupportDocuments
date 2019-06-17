@@ -168,6 +168,10 @@
     <Compile Include="Migrations\201905010557552_initialization.Designer.cs">
       <DependentUpon>201905010557552_initialization.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906171611501_Deficiency Add.cs" />
+    <Compile Include="Migrations\201906171611501_Deficiency Add.Designer.cs">
+      <DependentUpon>201906171611501_Deficiency Add.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DeficiencyReport.cs" />
     <Compile Include="Models\ErrorCodes.cs" />
@@ -263,6 +267,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201905010557552_initialization.resx">
       <DependentUpon>201905010557552_initialization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906171611501_Deficiency Add.resx">
+      <DependentUpon>201906171611501_Deficiency Add.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

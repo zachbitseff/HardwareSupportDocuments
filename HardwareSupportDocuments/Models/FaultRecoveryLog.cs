@@ -23,7 +23,7 @@ namespace HardwareSupportDocuments.Models
 
         public string Login { get; set; }
 
-
+        [Display(Name = "Error ID")]
         public int ErrorID { get; set; }
         public virtual ErrorCodes Error { get; set; }
 

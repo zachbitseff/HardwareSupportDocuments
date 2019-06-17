@@ -2,69 +2,117 @@
 
 @{
     ViewBag.Title = "Create";
+
+    ViewBag.DeficiencyHelpText = "This is a standalone, technical description of the problem. " +
+            Environment.NewLine + "Do NOT state any cause or blame the operator. The deficiency should be phrased so that it " +
+            "can be the lead-in for the Mission Impact section.";
+
+    ViewBag.TestConditionsHelpText = "This includes detail for the reader to understand " +
+            Environment.NewLine + "a) how the system was designed to function " +
+            Environment.NewLine + "b) how the system functions with the problem occurring" +
+            Environment.NewLine +"Provide" +
+            Environment.NewLine +"- What was being tested" +
+            Environment.NewLine +"- How it was being tested (i.e. test procedure)" +
+            Environment.NewLine +"- During what operational mode (e.g. standby, normal operation)" +
+            " along with other relevant results or observations. All relevant test data is recorded here.";
+
+    ViewBag.ImpactHelpText = "Begin the Mission Impact statement by repeating the deficiency. Explain the" +
+            " impact of the problem in the future tense. Reference—but do not add to—data and discussion from the Test" +
+            " Conditions & Results section. Use appropriately descriptive words that align with the severity of the impact.";
+
+
+
+    ViewBag.CausalAnalysisHelpText = "Provide additional information, analysis, and technical documentation" +
+            " that point to a probable underlying cause. If the cause is unknown, simply write “UNKNOWN”." +
+            Environment.NewLine + "Do not speculate on the cause of the deficiency or recommend corrective" + 
+            "action. Do not include test data in this section.";
+
+    ViewBag.RemedialActionHelpText = "If an interim solution was taken to allow continued test operations, " +
+            "describe the measures taken (work around) to compensate for the deficiency." + 
+            Environment.NewLine + "If no such action was taken," +
+            " simply write “NONE”.If action taken is not sufficient to fix the issue, add in \"-NOT SUFFICIENT\"" +
+            " otherwise leave as is.";
+
 }
 
-<h2>Create</h2>
+<h2>Deficiency Report - Add</h2>
 
 
 @using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
     
-    <div class="form-horizontal">
-        <h4>DeficiencyReport</h4>
-        <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        <div class="form-group">
-            @Html.LabelFor(model => model.ProjectID, "ProjectID", htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.DropDownList("ProjectID", null, htmlAttributes: new { @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.ProjectID, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.TestConditionsAndResults, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.TestConditionsAndResults, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.TestConditionsAndResults, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.MissionImpact, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.MissionImpact, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.MissionImpact, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.CauseAnalysis, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.CauseAnalysis, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.CauseAnalysis, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.RemedialAction, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.RemedialAction, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.RemedialAction, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
-            </div>
+<div class="form-horizontal">
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(model => model.ProjectID, "ProjectID", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("ProjectID", null, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.ProjectID, "", new { @class = "text-danger" })
         </div>
     </div>
+
+    
+    <div class="form-group">
+        @Html.LabelFor(model => model.Deficiency, htmlAttributes: new { @class = "control-label col-md-2" })
+        @ViewBag.DeficiencyHelpText
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Deficiency, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Deficiency, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    
+    <div class="form-group">
+        @Html.LabelFor(model => model.TestConditionsAndResults, htmlAttributes: new { @class = "control-label col-md-2" })
+        @ViewBag.TestConditionsHelpText
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.TestConditionsAndResults, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.TestConditionsAndResults, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    
+    <div class="form-group">
+        @Html.LabelFor(model => model.MissionImpact, htmlAttributes: new { @class = "control-label col-md-2" })
+        @ViewBag.ImpactHelpText
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.MissionImpact, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.MissionImpact, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    
+    <div class="form-group">
+        @Html.LabelFor(model => model.CauseAnalysis, htmlAttributes: new { @class = "control-label col-md-2" })
+        @ViewBag.CausalAnalysisHelpText
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.CauseAnalysis, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.CauseAnalysis, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    
+    <div class="form-group">
+        @Html.LabelFor(model => model.MissionImpact, htmlAttributes: new { @class = "control-label col-md-2" })
+        @ViewBag.RemedialActionHelpText
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.RemedialAction, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.RemedialAction, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Add New Deficiency Report" class="btn btn-default" />
+        </div>
+    </div>
+</div>
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Back to Deficiency Reports", "Index")
 </div>
 
 @section Scripts {

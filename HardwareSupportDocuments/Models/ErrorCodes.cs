@@ -12,6 +12,7 @@ namespace HardwareSupportDocuments.Models
         [Key]
         public int ErrorID { get; set; }
 
+        [Display(Name = "Error Code")]
         public string ErrorCode { get; set; }
 
 
@@ -26,6 +27,7 @@ namespace HardwareSupportDocuments.Models
         public string FailureMode { get; set; }
 
         // Foreign Key
+        [Display(Name = "Fault Log ID")]
         public int FaultLogID { get; set; }
         public virtual FaultRecoveryLog FaultLog { get; set; }
 

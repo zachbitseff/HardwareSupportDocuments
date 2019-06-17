@@ -13,6 +13,7 @@ namespace HardwareSupportDocuments.Models
         public int ProjectID { get; set; }
 
         [Required]
+        [Display(Name = "Project Name")]
         public string Name { get; set; }
 
         [Required]
