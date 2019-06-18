@@ -2,7 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\HardwareSupportDocuments",
-    "\\HardwareSupportDocuments\\Controllers"
+    "\\HardwareSupportDocuments\\Controllers",
+    "\\HardwareSupportDocuments\\Models",
+    "\\HardwareSupportDocuments\\Views",
+    "\\HardwareSupportDocuments\\Views\\DeficiencyReports",
+    "\\HardwareSupportDocuments\\Views\\FaultRecoveryLogs"
   ],
   "SelectedNode": "\\HardwareSupportDocuments.sln",
   "PreviewInSolutionExplorer": false
