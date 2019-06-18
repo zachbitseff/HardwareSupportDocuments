@@ -16,6 +16,8 @@ namespace HardwareSupportDocuments.Models
         [Key]
         public int DeficiencyID { get; set; }
 
+        [Display(Name = "Deficiency")]
+        public string Deficiency { get; set; }
 
         [Display(Name = "Test Conditions And Results")]
         public string TestConditionsAndResults { get; set; }

@@ -4,10 +4,9 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h2>Deficiency Report - Details</h2>
 
 <div>
-    <h4>DeficiencyReport</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -19,11 +18,11 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.TestConditionsAndResults)
+            @Html.DisplayNameFor(model => model.Deficiency)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.TestConditionsAndResults)
+            @Html.DisplayFor(model => model.Deficiency)
         </dd>
 
         <dt>
@@ -33,6 +32,16 @@
         <dd>
             @Html.DisplayFor(model => model.MissionImpact)
         </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TestConditionsAndResults)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TestConditionsAndResults)
+        </dd>
+
+
 
         <dt>
             @Html.DisplayNameFor(model => model.CauseAnalysis)
@@ -54,5 +63,5 @@
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.DeficiencyID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Back to Deficiency Reports", "Index")
 </p>

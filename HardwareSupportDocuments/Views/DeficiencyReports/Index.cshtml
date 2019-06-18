@@ -4,10 +4,10 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Deficiency Reports</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Add Deficiency Report", "Create")
 </p>
 <table class="table">
     <tr>
@@ -15,16 +15,7 @@
             @Html.DisplayNameFor(model => model.Project.Name)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.TestConditionsAndResults)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.MissionImpact)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CauseAnalysis)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.RemedialAction)
+            @Html.DisplayNameFor(model => model.Deficiency)
         </th>
         <th></th>
     </tr>
@@ -35,16 +26,7 @@
             @Html.DisplayFor(modelItem => item.Project.Name)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.TestConditionsAndResults)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.MissionImpact)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CauseAnalysis)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.RemedialAction)
+            @Html.DisplayFor(modelItem => item.Deficiency)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.DeficiencyID }) |

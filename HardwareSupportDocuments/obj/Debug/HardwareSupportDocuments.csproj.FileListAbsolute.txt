@@ -368,3 +368,4 @@ C:\Users\bitsez\Source\Repos\HardwareSupportDocuments\HardwareSupportDocuments\o
 C:\Users\bitsez\Source\Repos\HardwareSupportDocuments\HardwareSupportDocuments\obj\Debug\HardwareSupportDocuments.pdb
 C:\Users\bitsez\Source\Repos\HardwareSupportDocuments\HardwareSupportDocuments\obj\Debug\HardwareSupportDocuments.Migrations.initialization.resources
 C:\Users\bitsez\Source\Repos\HardwareSupportDocuments\HardwareSupportDocuments\obj\Debug\HardwareSupportDocuments.csproj.GenerateResource.cache
+C:\Users\bitsez\Source\Repos\HardwareSupportDocuments\HardwareSupportDocuments\obj\Debug\HardwareSupportDocuments.Migrations.DeficiencyAdd.resources
